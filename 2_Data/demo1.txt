@@ -1,1 +1,3 @@
-now all the previous text is gone
+Some text in a text file
+on multiple
+lines
