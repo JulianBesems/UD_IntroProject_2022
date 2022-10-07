@@ -87,7 +87,7 @@ class WallE:
         # in ALL CAPS to avoid clashes with existing variable!!!)
         # and make sure they are at this indent level
 
-        self.HELP_VARIABLE = None
+        self.TURNS = 0
 
     # Declare any help functions here (also use all caps for these!!)
     # and make sure they are at this indent level

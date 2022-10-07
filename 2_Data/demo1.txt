@@ -1,3 +1,3 @@
-Some text in a text file
-on multiple
-lines
+now all the previous text is gone
+some text in between
+now it has some more text

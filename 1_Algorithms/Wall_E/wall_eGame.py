@@ -197,4 +197,4 @@ while True:
     pygame.display.update()
 
     # Edit this value to change the speed of WALL-E
-    clock.tick(10)
+    clock.tick(30)
