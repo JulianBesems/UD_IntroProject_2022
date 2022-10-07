@@ -32,6 +32,10 @@ __Thursday__: - 6/10: _seminar_
 - Help with questions
 
 __Friday__: 13:00 - 7/10: __Session 2__
+
+https://ucl.zoom.us/rec/share/WZE7-h_2CrwlGH4WBPUt3vtkaxBSpm1EZDdq-gw6VtpK2AM6MbkHhNZF3NxXbXOA.aW06nHg4G4HSt8WX 
+Passcode: ```0eH@T?yi```
+
 - Reading files and Data formatting
     - Data parsing assignment for Tuesday
 
