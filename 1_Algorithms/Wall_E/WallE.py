@@ -88,24 +88,100 @@ class WallE:
         # and make sure they are at this indent level
 
         self.TURNS = 0
+        self.DIRECTION = 0
+        self.FINISHED = False
+        self.WALKING_TO_OBSTACLE = True
 
     # Declare any help functions here (also use all caps for these!!)
     # and make sure they are at this indent level
-    def HELP_FUNCTION(self):
-        pass
+
 
 # These are the 5 functions you have to fill in
     def walk_back_and_forth(self):
-        pass
+        if self.TURNS <= 1:
+            if self.check_wall():
+                self.turn_right()
+                self.turn_right()
+                self.TURNS += 1
+            else:
+                self.move()
 
     def walk_a_lap(self):
-        pass
+        if not self.check_wall():
+            self.move()
+        elif self.TURNS < 3:
+            self.TURNS += 1
+            self.turn_right()
 
     def find_the_box(self):
-        pass
+        if not self.FINISHED:
+            if self.check_on_box():
+                self.pick_up_box()
+                self.FINISHED = True
+            elif not self.check_wall():
+                self.move()
+            elif self.DIRECTION == 0:
+                self.turn_right()
+                self.move()
+                self.turn_right()
+                self.DIRECTION = 1
+            else:
+                self.turn_left()
+                self.move()
+                self.turn_left()
+                self.DIRECTION = 0
 
     def swap_all_boxes(self):
-        pass
+        if not self.FINISHED:
+            if self.check_on_box():
+                self.pick_up_box()
+            else:
+                self.drop_box()
+
+            if not self.check_wall():
+                self.move()
+            elif self.DIRECTION == 0:
+                self.turn_right()
+                if not self.check_wall():
+                    self.move()
+                else:
+                    self.FINISHED = True
+                self.turn_right()
+                self.DIRECTION = 1
+            else:
+                self.turn_left()
+                if not self.check_wall():
+                    self.move()
+                else:
+                    self.FINISHED = True
+                self.turn_left()
+                self.DIRECTION = 0
+
+    def CHECK_ON_WALL(self):
+        self.turn_right()
+        onwall = self.check_wall()
+        self.turn_left()
+        return onwall
 
     def walk_around_obstacle(self):
-        pass
+        if self.WALKING_TO_OBSTACLE:
+            if not self.check_wall():
+                self.move()
+            else:
+                if not self.FINISHED:
+                    self.WALKING_TO_OBSTACLE = False
+                    self.drop_box()
+                    self.turn_left()
+                    self.move()
+        else:
+            if self.check_on_box():
+                self.turn_left()
+                self.WALKING_TO_OBSTACLE = True
+                self.FINISHED = True
+            elif self.check_wall():
+                self.turn_left()
+            elif self.CHECK_ON_WALL():
+                self.move()
+            else:
+                self.turn_right()
+                self.move()
