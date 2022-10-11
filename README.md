@@ -43,6 +43,10 @@ __Monday__: - 10/10: _seminar_
 - Help with questions
 
 __Tuesday__: 13:00 - 11/10: __Session 3__
+
+https://ucl.zoom.us/rec/share/w77CLQ4vdMuiDHIbfmSOX2jqJ04K4GRlx6BWQfTmQ7CpYFbXt734ILhI1aAm4w4V.X5tNTGpVxpWUPH2u 
+Passcode: ```Yc16*L@T```
+
 - Introduction to Vectors and Dataframes
     - Data based assignment for Thursday 
 
