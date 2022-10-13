@@ -54,6 +54,10 @@ __Wednesday__: 10:00 - 13/10: _seminar_
 - Help with questions
 
 __Thursday__ : 13:00 - 13/10: __Session 4__
+
+https://ucl.zoom.us/rec/share/xdyRr2QdAygcpTI7WD-0BD_3EkTAMVBmkamudp8qwSFkHaFWcaQDn6bhproV9Zyt.BehBse_3UdoVfO84 
+Passcode: ```4XFjW=qn```
+
 - Introduction to SOM
     - Final assignment due on Wednesday
 
