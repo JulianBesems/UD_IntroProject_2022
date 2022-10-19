@@ -65,3 +65,5 @@ __Monday__: - 17/10: _seminar_
 - Help with questions
 
 __Wednesday__: 10:00 - 19/10: __Final Presentation__
+https://ucl.zoom.us/rec/share/Rw14Oj5t0FT25z2R_OCm42nVU99vPDfGnpsVS-n9dnuQ4HaOpksRrSDiKxNeh9oO.cGcRpZ52m5QzPgBg 
+Passcode: ```KU+0c2MB```
